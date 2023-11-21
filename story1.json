@@ -1,0 +1,105 @@
+{   
+    
+    "start": {
+        "story_text": "You wake up in an unfamiliar forest. There are two paths ahead. Choose path1 or path2",
+        "Choice": {
+            "path1": "path1",
+            "path2": "path2"
+        }
+    },
+    "path1": {
+        "story_text": "You proceed along the path, but encounter a pack of goblins. Do you fight or run ",
+        "Choice": {
+            "fight": "game_over",
+            "run": "path3"
+        }
+    },
+    "path2": {
+        "story_text": "You proceed along the path and encounter a massive cave. Do you enter or leave?",
+        "Choice": {
+            "enter": "path4",
+            "leave": "game_over1"
+        }
+    },
+    "game_over": {
+        "story_text": "The goblin smashes your head.. get rekt",
+        "is_game_over": true 
+    },
+    "path3": {
+        "story_text": "You run through the dark forest, with no sense of direction, your foot trips over an object shrouded in the shadows. You look down and see a mysterious book. As you are about to reach for it you suddenly feel a menacing aura.  Do you grab or ignore?",
+        "Choice": {
+            "grab": "path5",
+            "ignore": "game_over2"
+        }
+    },
+    "path4": {
+        "story_text": " You enter the cave and see engravings on the walls in an unknown language. You continue walking and find an old room. You feel a magical presence behind its door.  Do you open or leave?",
+        "Choice": {
+            "open": "path6",
+            "leave": "game_over3"
+        }
+    },
+    "game_over1": {
+        "story_text": "You leave the cave and immediately get attacked by a pride of fire-breathing griffins!"
+    },
+    "path5": {
+        "story_text": "You pick and add the magic book to your inventory. You open up the book and a map falls out. You take a look at the map and see two large landmarks. A dragons lair and a Dark wizards tower. Do you go to the lair or tower? ",
+        "items":["magic book"],
+        "Choice": {
+            "lair": "game_over4",
+            "items": "magic book",
+            "tower":"path7"
+        }
+    },
+    "game_over2": {
+        "story_text": "The ghost of the sword possesses you and you lose your body",
+        "is_game_over": true
+    },
+
+    "path6": {
+        "story_text": "You open the door and find a mysterious glowing sword in the center of the room stuck in a boulder. Torches on all sides light up as you approach the sword. Do you take_sword or ignore",
+        "Choice": {
+            "take_sword": "path8",
+            "ignore": "game_over5"
+        }
+    },
+    "game_over3": {
+        "story_text": "You turn around and start walking away, but then you get hit by lightning and fry to death"
+        
+    },
+    "game_over4": {
+        "story_text": "You decide to follow the map to the legendary dragons lair. On your way you encounter a group of dwarves. They seemed friendly from afar, but as you approach them you see they are drunk and rowdy. They seem to be holding a celebration. You approach them, and one jokingly punches your head off."
+    },
+    "path7":{
+        "story_text":"You decide to follow the map to the dark wizards tower. Before you can reach it, you encounter a group of undead. The fear of the undead chills your bones. As you feel like all hope is lost, suddenly the book begins to glow summoning a tornado to fling them away. Now you feel safe, Do you continue or rest?" ,
+        "Choice":{
+            "continue":"game_over6",
+            "rest":"game_over7"
+
+        }
+
+    },
+    "path8":{
+        "story_text":" You try to grab the sword and struggle to pull it out. You use all your strength and fly backwards with the sword in hand. You examine it, and see it has glowing marks all over it. You add it to your inventory. continue",
+        "items":["ancient sword"],
+        "Choice":{
+            "continue":"game_over8",
+            "items": "ancient sword"
+        }
+    },
+    "game_over5": {
+        "story_text": "Get rekt kid"
+    },
+    "game_over6":{
+        "story_text":"You quickly continue on your journey with the mysterious book. After climbing the mountain the tower sits upon, you reach the dark wizards lair. He greets you, and says job well done my new apprentice. You Look at him confused, not realizing what is in store for you in the future! continue."
+    },
+    "game_over7":{
+        "story_text": "After sending the undead away, you let your guard down and fall asleep. As you sleep, thieves steal all your belongings. You wake up distraught, with nothing. You try to make it to a local town but starve and freeze to death! "
+    },
+    "game_over8":{
+        "story_text":"You leave the cave with the sword in hand. As you journey intto the unknown you encounter a mob of monsters. But with your new sword, they proved to be of no problem. Eventually you run into a Knight and his party. They lead you to their town... your new life now begins! "
+
+    }
+
+    
+}
